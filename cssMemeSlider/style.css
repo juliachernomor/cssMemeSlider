@@ -1,0 +1,52 @@
+.slider-img__slide {
+    display: none;
+}
+
+.slider-text__text {
+    display: none;
+}
+
+.slider-radio-1:checked ~ .slider-img .slide-1 {
+    display: block;
+}
+
+.slider-radio-2:checked ~ .slider-img .slide-2 {
+    display: block;
+}
+.slider-radio-3:checked ~ .slider-img .slide-3 {
+    display: block;
+}
+.slider-radio-4:checked ~ .slider-img .slide-4 {
+    display: block;
+}
+.slider-radio-5:checked ~ .slider-img .slide-5 {
+    display: block;
+}
+.slider-radio-6:checked ~ .slider-img .slide-6 {
+    display: block;
+}
+
+
+.slider-radio-1:checked ~ .slider-text .slide-text1 {
+    display: block;
+}
+
+.slider-radio-2:checked ~ .slider-text .slide-text2 {
+    display: block;
+}
+
+.slider-radio-3:checked ~ .slider-text .slide-text3 {
+    display: block;
+}
+
+.slider-radio-4:checked ~ .slider-text .slide-text4 {
+    display: block;
+}
+
+.slider-radio-5:checked ~ .slider-text .slide-text5 {
+    display: block;
+}
+
+.slider-radio-6:checked ~ .slider-text .slide-text6 {
+    display: block;
+}
