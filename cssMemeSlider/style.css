@@ -1,3 +1,12 @@
+@font-face {
+  font-weight: 400;
+  font-family: Arial;
+  font-style: normal;
+  src: url("./fonts/arial.woff2") format("woff2"),
+    url("./fonts/arial.woff") format("woff");
+  font-display: swap;
+}
+  
   * {
     box-sizing: border-box;
   }
@@ -22,9 +31,13 @@
   html {
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2.125rem;
     background: linear-gradient(90deg, #c15359, #ec8225, #eeb243, #ec8225, #c15359);
+
+    @media (max-width: 964.5px) {
+      line-height: 1.9rem;
+    }
   }
 
   body {
@@ -172,8 +185,8 @@
     background-color: #f2f2f2;
 
     @media (max-width: 964.5px) {
-      width: 0.625rem;
-      height: 0.625rem;
+      width: clamp(0.625rem, 0.1592rem + 2.3292vw, 1.5625rem);
+      height: clamp(0.625rem, 0.1592rem + 2.3292vw, 1.5625rem);
     }
   }
 
@@ -223,6 +236,7 @@
     display: flex;
     align-items: center;
     width: 900%;
+    transition: transform 0.9s ease;
   }
 
   .slider-text__text {
